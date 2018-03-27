@@ -1,0 +1,124 @@
+
+/* ------------------------------------------------------------------------------
+	Typography
+-------------------------------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+p {
+	font-size: 14px;
+	line-height: 22.4px;
+	color: #6c7279;
+}
+h1 {
+	
+	font-size: 65px;
+	color: #2d3033;
+}
+h2 {
+	font-size: 40px;
+	color: #2d3033;
+}
+h3 {
+	font-size: 28px;
+	color: #2d3033;
+	font-weight: 300;
+}
+h4 {
+	font-size: 22px;
+	color: #2d3033;
+	font-weight: 400;
+}
+h5 {
+	font-size: 14px;
+	color: #2d3033;
+	font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------
+	Global Styles
+-------------------------------------------------------------------------------*/
+a {
+	color: #e84545;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	-moz-transition: background-color, color, 0.3s;
+	-o-transition: background-color, color, 0.3s;
+	-webkit-transition: background-color, color, 0.3s;
+	transition: background-color, color, 0.3s;
+}
+body {
+	font-family: "Cutive Mono";
+	font-weight: 400;
+	color: #fff;
+	height: 1200px;
+}
+
+.section {
+	padding: 50px 0;
+}
+.no-padding {
+	padding: 0;
+}
+.no-gutter [class*=col-] {
+	padding-right: 0;
+	padding-left: 0;
+}
+.extra-padding {
+	margin: 60px 0 0 100px;
+}
+/* ------------------------------------------------------------------------------
+	 Header
+-------------------------------------------------------------------------------*/
+#header {
+	
+	width: 100%;
+	z-index: 999;
+	height: 150px;
+}
+#header .header-content {
+	margin: 0 auto;
+	padding: 60px 10%;
+	width: 100%;
+	-moz-transition: padding 0.3s;
+	-o-transition: padding 0.3s;
+	-webkit-transition: padding 0.3s;
+	transition: padding 0.3s;
+}
+#header .logo {
+	float: left;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+/* ------------------------------------------------------------------------------
+	 info content
+-------------------------------------------------------------------------------*/
+
+.infoblock{
+
+
+	 height: 220px;
+	 /*border: solid #242038 4px;*/
+	 margin-top: 80px;
+	 background-color: #f2f4f7;
+	 box-shadow: 3px 3px #caccce;
+ }
+ .butt {
+    background-color: #e84545;
+	color: #f7ece1;
+	margin: auto;
+	
+    
+}
+
+#id_ip{
+    margin-left: 19px;
+}
+
+#block_form{
+	
+	width:235px;
+	margin: auto;
+	margin-top: 14px;
+}
