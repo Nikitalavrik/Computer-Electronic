@@ -13,7 +13,7 @@ def homepage(request):
 
     #main information
     wifi_info = get_info('ls')
-    stats_info = get_info('pwd')
+    stats_info = get_info('pihole', '-c')
     dev_info = get_info('ps')
 
 
@@ -33,9 +33,11 @@ def block_addv(request):
 
     return render_to_response('menu', RequestContext(request))
 
-def get_info(command,key=''):
+def get_info(command,key=None):
     
     try:
+        if key:
+            command = [command, key]
 
         result = subprocess.run(command, stdout=subprocess.PIPE)
         result = result.stdout
